@@ -1,11 +1,30 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio website with React",
-  "main": "index.js",
+  "description": "A modern, responsive portfolio website built with React and Webpack",
+  "main": "src/index.js",
+  "homepage": "https://yourusername.github.io/personal-portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/personal-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "webpack",
+    "responsive",
+    "website",
+    "personal",
+    "developer"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -17,10 +36,23 @@
     "@babel/preset-react": "^7.22.0",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.8.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.0",
     "webpack": "^5.88.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
