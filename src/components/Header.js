@@ -15,7 +15,7 @@ const Header = ({ activeSection }) => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h2>Portfolio</h2>
+          <h2>Zalawi Team</h2>
         </div>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul>

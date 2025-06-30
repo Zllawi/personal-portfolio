@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>Portfolio</h3>
+            <h3>Zalawi Team</h3>
             <p>Creating amazing web experiences with modern technologies.</p>
             <div className="social-links">
               <a href="#" className="social-link" aria-label="GitHub">
