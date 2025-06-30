@@ -12,40 +12,41 @@ module.exports = (env, argv) => {
       publicPath: isProduction ? '/personal-portfolio/' : '/',
       clean: true,
     },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react'],
+            },
           },
         },
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(mp4|webm|ogg)$/,
-        type: 'asset/resource',
-      },
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(mp4|webm|ogg|png|jpe?g|gif|svg)$/,
+          type: 'asset/resource',
+        },
+      ],
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: './public/index.html',
+      }),
     ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
-  devServer: {
+    devServer: {
       static: {
         directory: path.join(__dirname, 'public'),
       },
       compress: true,
       port: 3002,
       open: true,
+      historyApiFallback: true,
     },
   };
 };
