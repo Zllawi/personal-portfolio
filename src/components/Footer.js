@@ -38,9 +38,9 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
-              <p><i className="fas fa-envelope"></i> john.doe@example.com</p>
-              <p><i className="fas fa-phone"></i> +1 (555) 123-4567</p>
-              <p><i className="fas fa-map-marker-alt"></i> New York, NY</p>
+              <p><i className="fas fa-envelope"></i> amdyamad1@gmail.com</p>
+              <p><i className="fas fa-phone"></i> +218 94 436 4216</p>
+              <p><i className="fas fa-map-marker-alt"></i> Benghazi, Libya</p>
             </div>
           </div>
         </div>

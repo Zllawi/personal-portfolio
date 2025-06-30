@@ -32,15 +32,15 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <strong>Email:</strong>
-                <span>john.doe@example.com</span>
+                <span>amdyamad1@gmail.com</span>
               </div>
               <div className="contact-item">
                 <strong>Phone:</strong>
-                <span>+1 (555) 123-4567</span>
+                <span>+218 94 436 4216</span>
               </div>
               <div className="contact-item">
                 <strong>Location:</strong>
-                <span>New York, NY</span>
+                <span>Benghazi, Libya</span>
               </div>
             </div>
             <div className="social-links">
