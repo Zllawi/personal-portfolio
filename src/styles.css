@@ -441,6 +441,22 @@ section {
   background: #1d1d1d;
 }
 
+.hero .btn-github {
+  color: #ffffff;
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.hero .btn-github i {
+  font-size: 1.08rem;
+}
+
+.hero .btn-github:hover {
+  color: #000000;
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
 .hero .btn-secondary {
   color: #ffffff;
   background: transparent;

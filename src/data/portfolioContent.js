@@ -18,6 +18,7 @@ export const portfolioContent = {
       intro: 'I help businesses adopt digital services while designing clear and user-friendly digital experiences.',
       location: 'Benghazi, Libya',
       primaryCta: 'View My Projects',
+      githubCta: 'GitHub',
       secondaryCta: 'Contact Me',
       profileAlt: 'Portrait of Mohammed Al Zllawi',
       highlights: ['Merchant acquisition', 'Digital services', 'UI/UX design']
@@ -227,6 +228,7 @@ export const portfolioContent = {
       intro: 'أساعد الشركات على تبني الخدمات الرقمية، مع تصميم تجارب رقمية واضحة وسهلة للمستخدم.',
       location: 'بنغازي، ليبيا',
       primaryCta: 'عرض المشاريع',
+      githubCta: 'GitHub',
       secondaryCta: 'تواصل معي',
       profileAlt: 'صورة شخصية لمحمد الزلاوي',
       highlights: ['استقطاب العملاء', 'الخدمات الرقمية', 'تصميم UI/UX']

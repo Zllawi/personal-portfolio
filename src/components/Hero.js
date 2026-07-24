@@ -23,7 +23,7 @@ const Hero = ({ content }) => {
         if (index >= content.title.length) {
           window.clearInterval(typingTimer);
         }
-      }, 34);
+      }, 72);
     }, 350);
 
     return () => {
@@ -72,6 +72,15 @@ const Hero = ({ content }) => {
           <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
             {content.primaryCta}
           </button>
+          <a
+            className="btn btn-github"
+            href="https://github.com/Zllawi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-github" aria-hidden="true"></i>
+            {content.githubCta}
+          </a>
           <button className="btn btn-secondary" onClick={() => scrollToSection('contact')}>
             {content.secondaryCta}
           </button>
