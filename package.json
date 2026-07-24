@@ -17,7 +17,7 @@
     "personal",
     "developer"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Mohammed Al Zllawi <mohammed.alzllawi@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --mode development",

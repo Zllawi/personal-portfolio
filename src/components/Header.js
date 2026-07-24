@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Header = ({ activeSection }) => {
+const Header = ({ activeSection, content, sections, language, onToggleLanguage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
@@ -15,62 +15,48 @@ const Header = ({ activeSection }) => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h2>Zalawi Team</h2>
+          <button
+            type="button"
+            onClick={() => scrollToSection('home')}
+            aria-label={content.logo}
+          >
+            {content.logo}
+          </button>
         </div>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul>
-            <li>
-              <a 
-                href="#home" 
-                className={activeSection === 'home' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#about" 
-                className={activeSection === 'about' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#skills" 
-                className={activeSection === 'skills' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('skills'); }}
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#projects" 
-                className={activeSection === 'projects' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                className={activeSection === 'contact' ? 'active' : ''}
-                onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
-              >
-                Contact
-              </a>
-            </li>
+            {sections.map((sectionId) => (
+              <li key={sectionId}>
+                <a
+                  href={`#${sectionId}`}
+                  className={activeSection === sectionId ? 'active' : ''}
+                  onClick={(e) => { e.preventDefault(); scrollToSection(sectionId); }}
+                >
+                  {content.nav[sectionId]}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
-        <div className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button
+          type="button"
+          className="language-toggle"
+          onClick={onToggleLanguage}
+          aria-label={language === 'en' ? 'Switch to Arabic' : 'Switch to English'}
+        >
+          {content.languageToggle}
+        </button>
+        <button
+          type="button"
+          className={`menu-toggle ${isMenuOpen ? 'menu-toggle-open' : ''}`}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
     </header>
   );

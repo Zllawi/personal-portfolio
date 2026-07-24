@@ -1,45 +1,40 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import brandImage from '../../photo_2025-06-30_05-12-32.jpg';
 
-const Hero = () => {
-  const [text, setText] = useState('');
-  const fullText = "I'm a Web Developer";
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    if (index < fullText.length) {
-      const timeout = setTimeout(() => {
-        setText(prev => prev + fullText[index]);
-        setIndex(index + 1);
-      }, 100);
-      return () => clearTimeout(timeout);
+const Hero = ({ content }) => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [index, fullText]);
+  };
 
   return (
     <section id="home" className="hero">
-      <div className="video-background">
-        <video autoPlay muted loop playsInline>
-          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="video-overlay"></div>
+      <div className="hero-brand-background" aria-hidden="true">
+        <img src={brandImage} alt="" />
       </div>
-      <div className="hero-content">
-        <h1>Hello, I'm <span className="highlight">John Doe</span></h1>
-        <h2 className="typewriter">{text}<span className="cursor">|</span></h2>
-        <p>Creating amazing web experiences with modern technologies</p>
+      <div className="container hero-layout">
+        <div className="hero-content">
+          <p className="hero-eyebrow">{content.eyebrow}</p>
+          <h1>{content.title}</h1>
+          <p className="hero-intro">{content.intro}</p>
+          <div className="hero-meta">
+            {content.highlights.map((highlight) => (
+              <span key={highlight}>{highlight}</span>
+            ))}
+          </div>
+          <p className="hero-location">
+            <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+            {content.location}
+          </p>
+        </div>
         <div className="hero-buttons">
-          <button className="btn btn-primary" onClick={() => {
-            const element = document.getElementById('projects');
-            if (element) element.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            View My Work
+          <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
+            {content.primaryCta}
           </button>
-          <button className="btn btn-secondary" onClick={() => {
-            const element = document.getElementById('contact');
-            if (element) element.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            Contact Me
+          <button className="btn btn-secondary" onClick={() => scrollToSection('contact')}>
+            {content.secondaryCta}
           </button>
         </div>
       </div>
