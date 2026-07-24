@@ -20,7 +20,7 @@ export const portfolioContent = {
       primaryCta: 'View My Projects',
       githubUrl: 'https://github.com/Zllawi',
       githubCta: 'GitHub',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425/',
       linkedinCta: 'LinkedIn',
       secondaryCta: 'Contact Me',
       profileAlt: 'Portrait of Mohammed Al Zllawi',
@@ -201,7 +201,7 @@ export const portfolioContent = {
       phoneCta: 'Call',
       placeholderLinks: 'Add LinkedIn and portfolio links here when available',
       linkedin: 'LinkedIn',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425/',
       portfolio: 'Portfolio'
     },
     footer: {
@@ -234,7 +234,7 @@ export const portfolioContent = {
       primaryCta: 'عرض المشاريع',
       githubUrl: 'https://github.com/Zllawi',
       githubCta: 'GitHub',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425/',
       linkedinCta: 'LinkedIn',
       secondaryCta: 'تواصل معي',
       profileAlt: 'صورة شخصية لمحمد الزلاوي',
@@ -415,7 +415,7 @@ export const portfolioContent = {
       phoneCta: 'اتصال',
       placeholderLinks: 'يمكن إضافة رابط LinkedIn ورابط الأعمال هنا لاحقًا',
       linkedin: 'LinkedIn',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425/',
       portfolio: 'Portfolio'
     },
     footer: {
