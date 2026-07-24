@@ -441,17 +441,17 @@ section {
   background: #1d1d1d;
 }
 
-.hero .btn-github {
+.hero .btn-social {
   color: #ffffff;
   background: #151515;
   border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
-.hero .btn-github i {
+.hero .btn-social i {
   font-size: 1.08rem;
 }
 
-.hero .btn-github:hover {
+.hero .btn-social:hover {
   color: #000000;
   background: #ffffff;
   border-color: #ffffff;

@@ -12,7 +12,13 @@ const Footer = ({ content, sections }) => {
             <h3>{content.logo}</h3>
             <p>{footer.description}</p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label={contact.linkedin}>
+              <a
+                href={contact.linkedinUrl}
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={contact.linkedin}
+              >
                 <i className="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               </a>
               <a href="#" className="social-link" aria-label={contact.portfolio}>

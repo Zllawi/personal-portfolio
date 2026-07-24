@@ -73,13 +73,22 @@ const Hero = ({ content }) => {
             {content.primaryCta}
           </button>
           <a
-            className="btn btn-github"
-            href="https://github.com/Zllawi"
+            className="btn btn-social btn-github"
+            href={content.githubUrl}
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-brands fa-github" aria-hidden="true"></i>
             {content.githubCta}
+          </a>
+          <a
+            className="btn btn-social btn-linkedin"
+            href={content.linkedinUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            {content.linkedinCta}
           </a>
           <button className="btn btn-secondary" onClick={() => scrollToSection('contact')}>
             {content.secondaryCta}

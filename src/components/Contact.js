@@ -37,7 +37,13 @@ const Contact = ({ content }) => {
           <aside className="links-placeholder">
             <p>{content.placeholderLinks}</p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label={content.linkedin}>
+              <a
+                href={content.linkedinUrl}
+                className="social-link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={content.linkedin}
+              >
                 <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
                 {content.linkedin}
               </a>

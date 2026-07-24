@@ -18,7 +18,10 @@ export const portfolioContent = {
       intro: 'I help businesses adopt digital services while designing clear and user-friendly digital experiences.',
       location: 'Benghazi, Libya',
       primaryCta: 'View My Projects',
+      githubUrl: 'https://github.com/Zllawi',
       githubCta: 'GitHub',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinCta: 'LinkedIn',
       secondaryCta: 'Contact Me',
       profileAlt: 'Portrait of Mohammed Al Zllawi',
       highlights: ['Merchant acquisition', 'Digital services', 'UI/UX design']
@@ -198,6 +201,7 @@ export const portfolioContent = {
       phoneCta: 'Call',
       placeholderLinks: 'Add LinkedIn and portfolio links here when available',
       linkedin: 'LinkedIn',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
       portfolio: 'Portfolio'
     },
     footer: {
@@ -228,7 +232,10 @@ export const portfolioContent = {
       intro: 'أساعد الشركات على تبني الخدمات الرقمية، مع تصميم تجارب رقمية واضحة وسهلة للمستخدم.',
       location: 'بنغازي، ليبيا',
       primaryCta: 'عرض المشاريع',
+      githubUrl: 'https://github.com/Zllawi',
       githubCta: 'GitHub',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
+      linkedinCta: 'LinkedIn',
       secondaryCta: 'تواصل معي',
       profileAlt: 'صورة شخصية لمحمد الزلاوي',
       highlights: ['استقطاب العملاء', 'الخدمات الرقمية', 'تصميم UI/UX']
@@ -408,6 +415,7 @@ export const portfolioContent = {
       phoneCta: 'اتصال',
       placeholderLinks: 'يمكن إضافة رابط LinkedIn ورابط الأعمال هنا لاحقًا',
       linkedin: 'LinkedIn',
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi',
       portfolio: 'Portfolio'
     },
     footer: {
