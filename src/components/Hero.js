@@ -1,5 +1,6 @@
 import React from 'react';
 import brandImage from '../../photo_2025-06-30_05-12-32.jpg';
+import profileImage from '../assets/profile.jpg';
 
 const Hero = ({ content }) => {
   const scrollToSection = (sectionId) => {
@@ -29,6 +30,9 @@ const Hero = ({ content }) => {
             {content.location}
           </p>
         </div>
+        <figure className="hero-portrait">
+          <img src={profileImage} alt={content.profileAlt} />
+        </figure>
         <div className="hero-buttons">
           <button className="btn btn-primary" onClick={() => scrollToSection('projects')}>
             {content.primaryCta}

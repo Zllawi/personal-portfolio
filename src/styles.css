@@ -306,10 +306,18 @@ section {
   position: relative;
   z-index: 1;
   width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 410px);
+  grid-template-areas:
+    "content portrait"
+    "buttons portrait";
+  align-items: center;
+  column-gap: 52px;
 }
 
 .hero-content {
-  max-width: 840px;
+  grid-area: content;
+  max-width: 760px;
   animation: fadeInUp 0.8s ease both;
 }
 
@@ -321,10 +329,10 @@ section {
 }
 
 .hero-content h1 {
-  font-size: 4.55rem;
+  font-size: 3.95rem;
   font-weight: 800;
   line-height: 1.04;
-  max-width: 900px;
+  max-width: 780px;
   margin-bottom: 22px;
 }
 
@@ -365,10 +373,36 @@ section {
 }
 
 .hero-buttons {
+  grid-area: buttons;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   animation: fadeInUp 0.8s ease 0.12s both;
+}
+
+.hero-portrait {
+  grid-area: portrait;
+  justify-self: end;
+  width: min(100%, 390px);
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+  animation: fadeInUp 0.8s ease 0.18s both;
+}
+
+[dir='rtl'] .hero-portrait {
+  justify-self: start;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about,
@@ -1057,8 +1091,13 @@ section {
     font-size: 0.86rem;
   }
 
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 330px);
+    column-gap: 34px;
+  }
+
   .hero-content h1 {
-    font-size: 3.45rem;
+    font-size: 3.2rem;
   }
 
   .skills-grid {
@@ -1119,6 +1158,21 @@ section {
     grid-template-columns: 1fr;
   }
 
+  .hero-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "content"
+      "portrait"
+      "buttons";
+    row-gap: 24px;
+  }
+
+  .hero-portrait,
+  [dir='rtl'] .hero-portrait {
+    justify-self: start;
+    width: min(62vw, 300px);
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -1176,6 +1230,12 @@ section {
   .hero-content h1 {
     font-size: 2.35rem;
     line-height: 1.12;
+  }
+
+  .hero-portrait,
+  [dir='rtl'] .hero-portrait {
+    justify-self: center;
+    width: min(74vw, 250px);
   }
 
   .hero-eyebrow {

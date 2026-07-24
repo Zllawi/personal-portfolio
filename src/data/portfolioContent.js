@@ -19,6 +19,7 @@ export const portfolioContent = {
       location: 'Benghazi, Libya',
       primaryCta: 'View My Projects',
       secondaryCta: 'Contact Me',
+      profileAlt: 'Portrait of Mohammed Al Zllawi',
       highlights: ['Merchant acquisition', 'Digital services', 'UI/UX design']
     },
     about: {
@@ -227,6 +228,7 @@ export const portfolioContent = {
       location: 'بنغازي، ليبيا',
       primaryCta: 'عرض المشاريع',
       secondaryCta: 'تواصل معي',
+      profileAlt: 'صورة شخصية لمحمد الزلاوي',
       highlights: ['استقطاب التجار', 'الخدمات الرقمية', 'تصميم UI/UX']
     },
     about: {
