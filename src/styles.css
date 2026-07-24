@@ -844,13 +844,12 @@ section {
 
 .contact-content {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 26px;
-  align-items: stretch;
+  max-width: 780px;
 }
 
-.contact-info,
-.links-placeholder {
+.contact-info {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -865,8 +864,7 @@ section {
   margin-bottom: 12px;
 }
 
-.contact-info > p,
-.links-placeholder p {
+.contact-info > p {
   color: var(--muted);
   margin-bottom: 24px;
 }
@@ -1334,7 +1332,6 @@ section {
   .about-text,
   .timeline-card,
   .contact-info,
-  .links-placeholder,
   .education-card,
   .skill-group {
     padding: 22px;

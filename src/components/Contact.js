@@ -34,25 +34,6 @@ const Contact = ({ content }) => {
               </a>
             </div>
           </div>
-          <aside className="links-placeholder">
-            <p>{content.placeholderLinks}</p>
-            <div className="social-links">
-              <a
-                href={content.linkedinUrl}
-                className="social-link"
-                target="_blank"
-                rel="noreferrer"
-                aria-label={content.linkedin}
-              >
-                <i className="fa-brands fa-linkedin" aria-hidden="true"></i>
-                {content.linkedin}
-              </a>
-              <a href="#" className="social-link" aria-label={content.portfolio}>
-                <i className="fa-solid fa-link" aria-hidden="true"></i>
-                {content.portfolio}
-              </a>
-            </div>
-          </aside>
         </div>
       </div>
     </section>

@@ -199,10 +199,8 @@ export const portfolioContent = {
       location: 'Benghazi, Libya',
       emailCta: 'Send Email',
       phoneCta: 'Call',
-      placeholderLinks: 'Add LinkedIn and portfolio links here when available',
       linkedin: 'LinkedIn',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425',
-      portfolio: 'Portfolio'
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425'
     },
     footer: {
       description: 'Sales specialist, merchant acquisition professional, and UI/UX designer based in Benghazi, Libya.',
@@ -413,10 +411,8 @@ export const portfolioContent = {
       location: 'بنغازي، ليبيا',
       emailCta: 'إرسال بريد',
       phoneCta: 'اتصال',
-      placeholderLinks: 'يمكن إضافة رابط LinkedIn ورابط الأعمال هنا لاحقًا',
       linkedin: 'LinkedIn',
-      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425',
-      portfolio: 'Portfolio'
+      linkedinUrl: 'https://www.linkedin.com/in/mohammed-al-zllawi-31b01b425'
     },
     footer: {
       description: 'أخصائي مبيعات واستقطاب تجار ومصمم UI/UX مقيم في بنغازي، ليبيا.',

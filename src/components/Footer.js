@@ -21,9 +21,6 @@ const Footer = ({ content, sections }) => {
               >
                 <i className="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               </a>
-              <a href="#" className="social-link" aria-label={contact.portfolio}>
-                <i className="fa-solid fa-link" aria-hidden="true"></i>
-              </a>
             </div>
           </div>
           <div className="footer-section">
